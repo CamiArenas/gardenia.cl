@@ -191,6 +191,39 @@ body {
   animation: message-in 1s ease-out 3.2s forwards;
 }
 
+.social-links {
+  display: flex;
+  gap: 0.9rem;
+  margin-top: 1.15rem;
+}
+
+.social-links a {
+  display: inline-flex;
+  width: 1.15rem;
+  height: 1.15rem;
+  color: rgba(201, 221, 226, 0.5);
+  transition: color 180ms ease, filter 180ms ease;
+}
+
+.social-links a:hover,
+.social-links a:focus-visible {
+  color: rgba(0, 234, 255, 0.82);
+  filter: brightness(1.15);
+}
+
+.social-links svg {
+  width: 100%;
+  height: 100%;
+}
+
+.copyright {
+  margin: 1.15rem 0 0;
+  color: rgba(201, 221, 226, 0.42);
+  font-size: 0.58rem;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+
 @keyframes loader-in {
   0% { opacity: 0; transform: translate(-50%, -50%) scale(0.72) rotate(0deg); }
   15%, 62% { opacity: 1; }
